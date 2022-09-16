@@ -1,3 +1,6 @@
-const lastModified = document.querySelector('.last-modified');
-lastModified.dateTime = document.lastModified;
-lastModified.insertAdjacentText('afterbegin', document.lastModified);
+const footerText = document.querySelector('.footer__text:last-child');
+const time = document.createElement('time');
+time.className = 'last-modified';
+time.dateTime = document.lastModified;
+time.textContent = document.lastModified;
+footerText.insertAdjacentElement('beforeend', time);
