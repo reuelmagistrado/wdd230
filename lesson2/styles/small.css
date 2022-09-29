@@ -93,19 +93,6 @@ a {
   line-height: 1.618;
 }
 
-/* Images */
-@media screen and (min-width: 600px) {
-  .card__image {
-    height: 55vh;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .card__image {
-    height: 70vh;
-  }
-}
-
 /* Links */
 a:hover,
 a:focus {
@@ -157,40 +144,6 @@ a {
   margin-bottom: 1.6rem;
 }
 
-@media screen and (min-width: 600px) {
-  header {
-    padding: 2.4rem;
-  }
-
-  .card-container,
-  .card__body {
-    padding: 0 2.4rem 2.4rem;
-  }
-
-  .card {
-    margin-right: 0.8rem;
-  }
-  .card:last-of-type {
-    margin-right: 0;
-  }
-  .card:nth-of-type(2) {
-    margin-right: 0;
-  }
-}
-
-@media screen and (min-width: 911px) {
-  .card {
-    margin-bottom: 0;
-  }
-  .card:nth-of-type(2) {
-    margin-right: 0.8rem;
-  }
-
-  .card:last-of-type {
-    margin-right: 0;
-  }
-}
-
 /* Layout */
 
 .card-container {
@@ -198,24 +151,4 @@ a {
   grid-template-columns: 1fr;
   margin: auto;
   max-width: 1440px;
-}
-
-@media screen and (min-width: 600px) {
-  .card-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .card:last-of-type {
-    grid-column: 1/-1;
-  }
-}
-
-@media screen and (min-width: 911px) {
-  .card-container {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .card:last-of-type {
-    grid-column: 3;
-  }
 }

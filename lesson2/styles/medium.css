@@ -1,0 +1,39 @@
+/* Images */
+@media screen and (min-width: 600px) {
+  .card__image {
+    height: 55vh;
+  }
+}
+
+/* White Space */
+@media screen and (min-width: 600px) {
+  header {
+    padding: 2.4rem;
+  }
+
+  .card-container,
+  .card__body {
+    padding: 0 2.4rem 2.4rem;
+  }
+
+  .card {
+    margin-right: 0.8rem;
+  }
+  .card:last-of-type {
+    margin-right: 0;
+  }
+  .card:nth-of-type(2) {
+    margin-right: 0;
+  }
+}
+
+/* Layout */
+@media screen and (min-width: 600px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card:last-of-type {
+    grid-column: 1/-1;
+  }
+}
