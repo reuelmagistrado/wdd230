@@ -1,0 +1,146 @@
+:root {
+  --paragraph: 1.563rem;
+  --headline1: 3.815rem;
+  --headline2: 3.052rem;
+  --headline3: 2.441rem;
+  --headline4: 1.953rem;
+  --color-primary: #fffffe;
+  --color-secondary: #0f0e17;
+  --color-tertiary: #a7a9be;
+  --color-accent: #ff8906;
+  --color-accent1: #f25f4c;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Typography */
+body {
+  background: var(--color-secondary);
+  color: var(--color-tertiary);
+  line-height: 1.8;
+  font-size: var(--paragraph);
+  font-family: "Montserrat", "Segoe UI", "Helvetica", sans-serif;
+  letter-spacing: 1px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--color-primary);
+}
+
+h1 {
+  font-size: var(--headline1);
+}
+
+h2 {
+  font-size: var(--headline2);
+}
+
+h3 {
+  font-size: var(--headline3);
+}
+
+h4 {
+  font-size: var(--headline4);
+}
+
+em {
+  font-style: normal;
+  color: var(--color-accent);
+}
+
+strong {
+  border-bottom: 3px solid var(--color-accent);
+}
+/* Navigation Bar */
+nav {
+  background: var(--color-primary);
+  text-align: center;
+  font-weight: 700;
+}
+
+.nav__items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__link {
+  color: var(--color-secondary);
+  display: inline-block;
+  padding: 1.6rem;
+  text-decoration: none;
+  width: 100%;
+}
+
+/* Main */
+main {
+  padding: 1.6rem;
+}
+
+.title {
+  text-align: center;
+}
+
+.title,
+p,
+h3 {
+  margin-top: 0;
+  margin-bottom: 2.4rem;
+}
+
+.subtitle,
+h4 {
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+}
+
+/* Cards */
+
+.cards-container {
+  margin: 4rem 0;
+}
+.cards {
+  background: var(--color-primary);
+  padding: 1.6rem;
+  margin-bottom: 1.6rem;
+  border-radius: 0.5rem;
+}
+
+.cards__title {
+  color: var(--color-secondary);
+}
+
+.cards__text {
+  color: #2e2f3e;
+}
+
+/* Image */
+img {
+  max-width: 100%;
+  height: auto;
+  background: var(--color-primary);
+}
+
+/* Footer */
+footer {
+  background: var(--color-primary);
+  color: var(--color-secondary);
+  padding: 1.6rem;
+  text-align: center;
+}
+
+small {
+  font-size: 1.25rem;
+  font-weight: 700;
+}

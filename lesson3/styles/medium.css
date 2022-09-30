@@ -1,0 +1,48 @@
+:root {
+  --normal: 1.777rem;
+  --color-primary: #fffffe;
+  --color-secondary: #0f0e17;
+  --color-tertiary: #a7a9be;
+  --color-accent: #ff8906;
+  --color-accent1: #f25f4c;
+}
+
+@media screen and (min-width: 37.5rem) {
+  .nav__items {
+    display: flex;
+  }
+
+  .nav__item {
+    flex: 1 1 auto;
+  }
+
+  .nav__link {
+    padding: 2.4rem;
+  }
+
+  .nav__link:hover {
+    background: var(--color-accent1);
+    color: var(--color-primary);
+  }
+
+  main {
+    padding: 2.4rem;
+  }
+
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.6rem;
+    margin: 8rem 0;
+  }
+
+  h3 {
+    grid-column: span 2;
+    text-align: center;
+  }
+
+  h3,
+  .cards {
+    margin: 0;
+  }
+}
