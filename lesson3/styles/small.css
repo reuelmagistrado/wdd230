@@ -233,3 +233,9 @@ b {
 td:last-of-type {
   text-align: center;
 }
+
+/* Target Audience */
+table ul {
+  padding: 0 0 0 1.6rem;
+  margin: 0;
+}
