@@ -1,5 +1,6 @@
 :root {
   --paragraph: 1.563rem;
+  --small: 1.25rem;
   --headline1: 3.815rem;
   --headline2: 3.052rem;
   --headline3: 2.441rem;
@@ -143,4 +144,92 @@ footer {
 small {
   font-size: 1.25rem;
   font-weight: 700;
+}
+
+/* Color Scheme */
+/* Table */
+
+.primary {
+  background: var(--color-primary);
+}
+
+.secondary {
+  background: var(--color-secondary);
+}
+
+.tertiary {
+  background: var(--color-tertiary);
+}
+
+.accent {
+  background: var(--color-accent);
+}
+
+.accent1 {
+  background: var(--color-accent1);
+}
+
+table,
+th,
+td {
+  border: 1px solid var(--color-accent);
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto 1.6rem;
+  width: 100%;
+  height: auto;
+}
+
+.color__container {
+  height: calc(100vh - (240.5px + 88.25px));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+th,
+td {
+  padding: 0.8rem;
+}
+
+.footer--small {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Typography Page */
+hr {
+  margin: 2.4rem 0.8rem;
+}
+
+b {
+  font-weight: 400;
+  color: var(--color-primary);
+}
+
+.headline1 {
+  font-size: var(--headline1);
+}
+
+.headline2 {
+  font-size: var(--headline2);
+}
+
+.headline3 {
+  font-size: var(--headline3);
+}
+
+.headline4 {
+  font-size: var(--headline4);
+}
+
+.small {
+  font-size: var(--small);
+}
+
+td:last-of-type {
+  text-align: center;
 }

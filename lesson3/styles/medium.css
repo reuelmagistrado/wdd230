@@ -1,5 +1,10 @@
 :root {
-  --normal: 1.777rem;
+  --paragraph: 1.563rem;
+  --small: 1.25rem;
+  --headline1: 3.815rem;
+  --headline2: 3.052rem;
+  --headline3: 2.441rem;
+  --headline4: 1.953rem;
   --color-primary: #fffffe;
   --color-secondary: #0f0e17;
   --color-tertiary: #a7a9be;
@@ -14,10 +19,6 @@
 
   .nav__item {
     flex: 1 1 auto;
-  }
-
-  .nav__link {
-    padding: 2.4rem;
   }
 
   .nav__link:hover {
@@ -44,5 +45,24 @@
   h3,
   .cards {
     margin: 0;
+  }
+
+  /* Color Scheme */
+  .color__container {
+    height: calc(100vh - (88.25px + 88.25px));
+  }
+
+  .schema__title {
+    font-size: var(--headline1);
+  }
+
+  th {
+    font-size: var(--headline3);
+  }
+}
+
+@media screen and (min-width: 652px) {
+  .color__container {
+    height: calc(100vh - (60.13px + 88.25px));
   }
 }

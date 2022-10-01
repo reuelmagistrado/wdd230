@@ -3,4 +3,8 @@
     max-width: 960px;
     margin: 4rem auto;
   }
+
+  .color__container {
+    margin: 0 auto;
+  }
 }
