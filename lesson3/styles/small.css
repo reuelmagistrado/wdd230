@@ -1,15 +1,15 @@
 :root {
-  --paragraph: 1.563rem;
-  --small: 1.25rem;
+  --color-accent: #ff8906;
+  --color-accent1: #f25f4c;
+  --color-primary: #fffffe;
+  --color-secondary: #0f0e17;
+  --color-tertiary: #a7a9be;
   --headline1: 3.815rem;
   --headline2: 3.052rem;
   --headline3: 2.441rem;
   --headline4: 1.953rem;
-  --color-primary: #fffffe;
-  --color-secondary: #0f0e17;
-  --color-tertiary: #a7a9be;
-  --color-accent: #ff8906;
-  --color-accent1: #f25f4c;
+  --paragraph: 1.563rem;
+  --small: 1.25rem;
 }
 
 *,
@@ -26,10 +26,10 @@ html {
 body {
   background: var(--color-secondary);
   color: var(--color-tertiary);
-  line-height: 1.8;
-  font-size: var(--paragraph);
   font-family: "Montserrat", "Segoe UI", "Helvetica", sans-serif;
+  font-size: var(--paragraph);
   letter-spacing: 1px;
+  line-height: 1.8;
 }
 
 h1,
@@ -66,8 +66,8 @@ strong {
 /* Navigation Bar */
 nav {
   background: var(--color-primary);
-  text-align: center;
   font-weight: 700;
+  text-align: center;
 }
 
 .nav__items {
@@ -96,14 +96,14 @@ main {
 .title,
 p,
 h3 {
-  margin-top: 0;
   margin-bottom: 2.4rem;
+  margin-top: 0;
 }
 
 .subtitle,
 h4 {
-  margin-top: 0;
   margin-bottom: 0.8rem;
+  margin-top: 0;
 }
 
 /* Cards */
@@ -113,9 +113,9 @@ h4 {
 }
 .cards {
   background: var(--color-primary);
-  padding: 1.6rem;
-  margin-bottom: 1.6rem;
   border-radius: 0.5rem;
+  margin-bottom: 1.6rem;
+  padding: 1.6rem;
 }
 
 .cards__title {
@@ -128,9 +128,10 @@ h4 {
 
 /* Image */
 img {
-  max-width: 100%;
-  height: auto;
   background: var(--color-primary);
+  display: block;
+  height: auto;
+  max-width: 100%;
 }
 
 /* Footer */
@@ -177,15 +178,15 @@ td {
 
 table {
   border-collapse: collapse;
+  height: auto;
   margin: 0 auto 1.6rem;
   width: 100%;
-  height: auto;
 }
 
 .color__container {
-  height: calc(100vh - (240.5px + 88.25px));
   display: flex;
   flex-direction: column;
+  height: calc(100vh - (240.5px + 88.25px));
   justify-content: center;
 }
 
@@ -195,9 +196,21 @@ td {
 }
 
 .footer--small {
-  position: absolute;
   bottom: 0;
+  position: absolute;
   width: 100%;
+}
+
+.links {
+  border-bottom: 2px solid #0096ff;
+  color: var(--color-tertiary);
+  text-decoration: none;
+}
+
+.links:hover,
+.links:focus {
+  border-bottom: 2px solid #ff0000;
+  transition: border-bottom 0.3s;
 }
 
 /* Typography Page */
@@ -206,8 +219,8 @@ hr {
 }
 
 b {
-  font-weight: 400;
   color: var(--color-primary);
+  font-weight: 400;
 }
 
 .headline1 {
@@ -231,11 +244,12 @@ b {
 }
 
 td:last-of-type {
-  text-align: center;
+  max-width: 50ch;
 }
 
 /* Target Audience */
 table ul {
-  padding: 0 0 0 1.6rem;
+  list-style-position: inside;
   margin: 0;
+  padding: 0;
 }

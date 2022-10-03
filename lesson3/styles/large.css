@@ -1,7 +1,7 @@
 @media screen and (min-width: 60rem) {
   main {
-    max-width: 960px;
     margin: 4rem auto;
+    max-width: 960px;
   }
 
   .color__container {

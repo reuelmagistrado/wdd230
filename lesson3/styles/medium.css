@@ -1,15 +1,15 @@
 :root {
-  --paragraph: 1.563rem;
-  --small: 1.25rem;
+  --color-accent: #ff8906;
+  --color-accent1: #f25f4c;
+  --color-primary: #fffffe;
+  --color-secondary: #0f0e17;
+  --color-tertiary: #a7a9be;
   --headline1: 3.815rem;
   --headline2: 3.052rem;
   --headline3: 2.441rem;
   --headline4: 1.953rem;
-  --color-primary: #fffffe;
-  --color-secondary: #0f0e17;
-  --color-tertiary: #a7a9be;
-  --color-accent: #ff8906;
-  --color-accent1: #f25f4c;
+  --paragraph: 1.563rem;
+  --small: 1.25rem;
 }
 
 @media screen and (min-width: 37.5rem) {
@@ -32,8 +32,8 @@
 
   .cards-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     gap: 1.6rem;
+    grid-template-columns: repeat(2, 1fr);
     margin: 8rem 0;
   }
 
