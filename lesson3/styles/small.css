@@ -142,7 +142,8 @@ footer {
   text-align: center;
 }
 
-small {
+small,
+time {
   font-size: 1.25rem;
   font-weight: 700;
 }
