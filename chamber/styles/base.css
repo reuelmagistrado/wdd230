@@ -1,0 +1,277 @@
+/* GENERAL */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 64em;
+}
+
+button {
+  cursor: pointer;
+}
+button span {
+  display: block;
+}
+
+/* VARIABLES */
+
+:root {
+  --color-accent: #ff8906;
+  --color-accent1: #f25f4c;
+  --color-primary: #fffffe;
+  --color-secondary: #0f0e17;
+  --color-tertiary: #a7a9be;
+  --headline1: 3.815rem;
+  --headline2: 3.052rem;
+  --headline3: 2.441rem;
+  --headline4: 1.953rem;
+  --normal: 1.563rem;
+  --small: 1.25rem;
+  --dark-shadow: rgba(15, 14, 23, 0.2);
+  --dark-shadow-clear: rgba(15, 14, 23, 0.5);
+}
+
+.dark-theme {
+  --color-primary: #0f0e17;
+  --color-secondary: #fffffe;
+  --dark-shadow: rgba(255, 255, 254, 0.2);
+  --dark-shadow-clear: rgba(255, 255, 254, 0.5);
+}
+/* TYPOGRAPHY */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", "Segoe UI", "Helvetica", sans-serif;
+  font-size: var(--normal);
+  letter-spacing: 1px;
+  background: var(--color-primary);
+  color: var(--color-secondary);
+}
+
+/* HEADER */
+
+header {
+  background: var(--color-tertiary);
+  color: var(--color-secondary);
+}
+
+/* logo */
+.logo-container {
+  align-items: center;
+  display: flex;
+  gap: 0.8rem;
+  justify-content: center;
+  margin-bottom: 1.6rem;
+  padding-top: 1.6rem;
+}
+
+.site-name-container {
+  text-align: center;
+}
+
+.header__site-name {
+  margin: 0;
+  font-size: var(--headline1);
+}
+
+.header__site-description {
+  margin: 0;
+  font-size: var(--normal);
+}
+
+/* DATE */
+.date {
+  background: var(--color-secondary);
+  color: var(--color-primary);
+  display: block;
+  padding: 0.8rem;
+  text-align: center;
+}
+
+/* Navigation Top */
+
+.navigation {
+  background: var(--color-primary);
+  box-shadow: 0 2px 4px 0 var(--dark-shadow);
+}
+
+.navigation--top {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--dark-shadow);
+}
+
+.social {
+  text-align: center;
+}
+
+svg {
+  padding: 1.6rem;
+}
+
+.navigation--top__btn {
+  background: var(--color-accent);
+  border-radius: 5rem;
+  border: none;
+  display: none;
+  font-size: small;
+  padding: 1.6rem;
+}
+
+.nav-items__wrapper {
+  align-items: center;
+  display: flex;
+  gap: 1.6rem;
+}
+
+/* Theme */
+.theme {
+  display: block;
+  padding: 1.6rem;
+}
+
+.theme:hover {
+  cursor: pointer;
+}
+
+/* Hamburger Button */
+.hamburger-btn {
+  background: transparent;
+  border: none;
+  font-size: var(--headline1);
+  padding: 0 1.6rem;
+  text-align: center;
+  display: block;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  background-color: var(--color-secondary);
+  height: 0.4rem;
+  margin: 0.8rem auto;
+  transition: 0.4s;
+  width: 3.2rem;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+/* Navigation List */
+
+.navigation__list {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.show-list {
+  display: block;
+}
+
+.navigation__item {
+  border-bottom: 1px solid var(--dark-shadow);
+}
+
+.navigation__item a {
+  color: var(--color-secondary);
+  display: block;
+  padding: 1.6rem;
+}
+
+.navigation__item a:hover {
+  background: var(--dark-shadow);
+  color: var(--color-primary);
+}
+
+/* FOOTER */
+footer {
+  background: var(--color-tertiary);
+  padding: 1.6rem;
+  text-align: center;
+}
+
+address {
+  font-style: normal;
+  margin-bottom: 0.8rem;
+}
+
+.company-details {
+  border-bottom: 2px solid var(--dark-shadow-clear);
+}
+
+/* MAP */
+.map {
+  max-width: 100%;
+  width: 100vw;
+  margin: 1.6rem auto;
+}
+
+.base-footer {
+  margin-top: 1.6rem;
+}
+
+/* MAIN */
+main {
+  padding: 1.6rem;
+}
+
+/* PLACEHOLDER STYLES */
+.hero,
+.event,
+.weather,
+.news-release,
+.spotlights,
+.join {
+  border: 1px solid var(--color-secondary);
+  margin-bottom: 1.6rem;
+  padding: 1.6rem;
+}
+
+.hero div {
+  margin-bottom: 1.6rem;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.join {
+  display: none;
+}
+
+.spotlights section {
+  border: 1px solid var(--color-secondary);
+}
+
+.spotlights section:last-child {
+  display: none;
+}
