@@ -35,21 +35,21 @@ button span {
   --color-primary: #fffffe;
   --color-secondary: #0f0e17;
   --color-tertiary: #a7a9be;
+  --dark-shadow-clear: rgba(15, 14, 23, 0.5);
+  --dark-shadow: rgba(15, 14, 23, 0.2);
   --headline1: 3.815rem;
   --headline2: 3.052rem;
   --headline3: 2.441rem;
   --headline4: 1.953rem;
   --normal: 1.563rem;
   --small: 1.25rem;
-  --dark-shadow: rgba(15, 14, 23, 0.2);
-  --dark-shadow-clear: rgba(15, 14, 23, 0.5);
 }
 
 .dark-theme {
   --color-primary: #0f0e17;
   --color-secondary: #fffffe;
-  --dark-shadow: rgba(255, 255, 254, 0.2);
-  --dark-shadow-clear: rgba(255, 255, 254, 0.5);
+  --dark-shadow: rgba(255, 255, 255, 0.2);
+  --dark-shadow-clear: rgba(255, 255, 255, 0.5);
 }
 /* TYPOGRAPHY */
 
@@ -58,11 +58,11 @@ html {
 }
 
 body {
+  background: var(--color-primary);
+  color: var(--color-secondary);
   font-family: "Montserrat", "Segoe UI", "Helvetica", sans-serif;
   font-size: var(--normal);
   letter-spacing: 1px;
-  background: var(--color-primary);
-  color: var(--color-secondary);
 }
 
 /* HEADER */
@@ -115,7 +115,6 @@ header {
 .navigation--top {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid var(--dark-shadow);
 }
 
 .social {
@@ -203,12 +202,13 @@ svg {
 .navigation__item a {
   color: var(--color-secondary);
   display: block;
+  font-weight: bold;
   padding: 1.6rem;
 }
 
 .navigation__item a:hover {
   background: var(--dark-shadow);
-  color: var(--color-primary);
+  color: var(--color-accent1);
 }
 
 /* FOOTER */

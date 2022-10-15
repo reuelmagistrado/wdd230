@@ -5,6 +5,7 @@ const time = document.createElement("time");
 const fulldate = new Intl.DateTimeFormat("en-UK", { dateStyle: "full" }).format(
   now
 );
+time.id = "banner";
 time.dateTime = now;
 time.textContent = fulldate;
 time.className = "date";
@@ -44,3 +45,13 @@ function changeTheme() {
 }
 
 theme.addEventListener("click", changeTheme);
+
+// BANNER
+
+const banner = document.querySelector("#banner");
+const currentDay = now.getDay();
+
+if (currentDay === 1 || currentDay === 2) {
+  banner.textContent =
+    "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
+}

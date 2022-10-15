@@ -21,6 +21,10 @@
     border-bottom: none;
   }
 
+  .navigation__item a:hover {
+    background: none;
+  }
+
   .navigation--top {
     grid-column: 2/3;
     justify-content: flex-end;
