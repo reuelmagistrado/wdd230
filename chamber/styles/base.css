@@ -65,7 +65,7 @@ body {
 
 header {
   background: var(--color-tertiary);
-  color: var(--color-secondary);
+  color: var(--color-primary);
 }
 
 /* logo */
@@ -313,6 +313,10 @@ main {
 
 .card-link {
   color: var(--color-link);
+  font-weight: 700;
+}
+
+.spotlight__link {
   font-weight: 700;
 }
 
