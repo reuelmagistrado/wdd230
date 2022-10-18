@@ -33,19 +33,6 @@ time2.innerHTML = `Last&nbsp;Modified: ${document.lastModified}`;
 
 yearHolder.insertAdjacentElement("beforeend", time2);
 
-const theme = document.querySelector(".theme");
-const icon = document.querySelector("#icon");
-function changeTheme() {
-  document.body.classList.toggle("dark-theme");
-  if (document.body.classList.contains("dark-theme")) {
-    icon.src = "./images/sun.png";
-  } else {
-    icon.src = "./images/moon.png";
-  }
-}
-
-theme.addEventListener("click", changeTheme);
-
 // BANNER
 
 const banner = document.querySelector("#banner");
@@ -55,3 +42,43 @@ if (currentDay === 1 || currentDay === 2) {
   banner.textContent =
     "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
 }
+
+// Weather
+
+const weather = {
+  apiKey: "4a21eeb6818a6efbe082b97dad0224ab",
+  fetchWeather: async function () {
+    const response = await fetch(
+      `https://api.openweathermap.org/data/2.5/weather?lat=14.5243&lon=121.0792&units=metric&appid=${this.apiKey}`
+    );
+
+    if (response.ok) {
+      const data = await response.json();
+      this.displayWeather(data);
+    }
+  },
+  displayWeather: function (data) {
+    const { name } = data;
+    const { icon, description } = data.weather[0];
+    const { temp, humidity } = data.main;
+    const { speed } = data.wind;
+    document
+      .querySelector(".weather__title")
+      .insertAdjacentText("beforeend", ` in ${name}`);
+    document.querySelector(".weather__temp").textContent = `${temp}°C`;
+    document.querySelector(
+      ".weather__icon"
+    ).src = `https://openweathermap.org/img/wn/${icon}.png`;
+    document.querySelector(
+      ".weather__description"
+    ).textContent = `${description[0].toUpperCase()}${description.slice(1)}`;
+    document.querySelector(
+      ".weather__humidity"
+    ).textContent = `Humidity: ${humidity}%`;
+    document.querySelector(
+      ".weather__wind"
+    ).textContent = `Wind speed: ${speed} km/h`;
+  },
+};
+
+weather.fetchWeather();

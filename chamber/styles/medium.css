@@ -1,6 +1,7 @@
 @media screen and (min-width: 37.5em) {
   .navigation--top__btn {
     display: block;
+    margin-right: 2.4rem;
   }
 
   .company-details__text {
@@ -14,6 +15,10 @@
   .footer__logo {
     display: flex;
     align-items: center;
+  }
+
+  .hero {
+    height: 60vh;
   }
 
   main {
@@ -46,7 +51,12 @@
   .spotlights {
     grid-area: spot;
     display: flex;
+    justify-content: center;
     gap: 1.6rem;
+  }
+
+  .spotlights section:first-child {
+    margin-bottom: 0;
   }
 
   .join {
