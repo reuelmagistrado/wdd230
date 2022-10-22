@@ -156,6 +156,10 @@ svg {
   display: block;
 }
 
+.menu-label {
+  display: none;
+}
+
 .bar1,
 .bar2,
 .bar3 {
@@ -212,6 +216,7 @@ footer {
   background: var(--color-tertiary);
   padding: 1.6rem;
   text-align: center;
+  color: var(--color-primary);
 }
 
 address {
