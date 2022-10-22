@@ -52,12 +52,16 @@
   }
 
   main {
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 32rem auto 1fr;
   }
 
   .event {
     grid-column: 1/2;
     grid-row: 1/2;
+  }
+
+  .event img {
+    display: none;
   }
 
   .hero {
@@ -75,13 +79,6 @@
     font-size: var(--headline4);
   }
 
-  .hero__body {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
-  }
-
   .spotlights {
     grid-column: 3/4;
     grid-row: 1/4;
@@ -91,6 +88,10 @@
 
   .spotlights section:last-child {
     display: block;
+  }
+
+  .spotlights section img {
+    width: 5rem;
   }
 
   .event {

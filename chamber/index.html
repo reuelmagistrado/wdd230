@@ -23,7 +23,7 @@
 <body>
     <header>
         <div class="logo-container">
-            <img class="header__logo" src="./images/logo-small.webp" alt="">
+            <img class="header__logo" src="./images/logo-small.webp" alt="" width="55" height="54">
             <section class="site-name-container">
                 <h1 class="header__site-name">Adepts</h1>
                 <p class="header__site-description">Chamber of Commerce</p>
@@ -115,12 +115,16 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="wrapper">
         <section class="hero">
+            <picture>
+                <source media="(min-width: 960px)" srcset="./images/wdd230-org-large.webp">
+                <source media="(min-width: 600px)" srcset="./images/wdd230-org-medium.webp">
+                <img src="./images/wdd230-org-small.webp" alt="Two men and one woman having a business meeting.">
+            </picture>
             <div class="hero__body">
                 <h1 class="hero__title">All Adept, All The Time.</h1>
                 <p class="hero__text">Expand your business by expanding your exposure.</p>
-                <!-- <img class="hero__image" src="./images/graphs.gif" alt=""> -->
                 <button class="hero__button">JOIN NOW</button>
             </div>
         </section>
@@ -133,7 +137,7 @@
         </section>
         <section class="event">
             <h2 class="event__title">Chamber 101</h2>
-            <img src="./images/event.png" alt="">
+            <img src="./images/event.webp" alt="" width="256" height="219">
             <div>
                 <time datetime="2022-10-07 08:30" class="event__time">Friday, October 07, 2022 &#8212; 08:30 AM - 09:30
                     AM
@@ -154,6 +158,7 @@
                 <div class="weather__description"></div>
                 <div class="weather__humidity"></div>
                 <div class="weather__wind"></div>
+                <div class="weather__chill"></div>
             </div>
         </section>
         <section class="news-release">
@@ -168,7 +173,7 @@
             <section>
                 <div class="spotlight__head">
                     <h3 class="spotlights__title">Pet Waggly</h3>
-                    <img src="./images/pet-waggly.png" alt="">
+                    <img src="./images/pet-waggly.webp" alt="" width="256" height="144">
                 </div>
                 <div class="spotlight__body">
                     <p class="spotlights__text">Nothing is faster than Pet Waggly.</p>
@@ -182,7 +187,7 @@
             <section>
                 <div class="spotlight__head">
                     <h3 class="spotlights__title">Techbia</h3>
-                    <img src="./images/techbia.png" alt="">
+                    <img src="./images/techbia.webp" alt="" width="256" height="188">
                 </div>
                 <div class="spotlight__body">
                     <p class="spotlights__text">It's the Bright One, it's the Right One, that's Techbia.</p>
@@ -196,7 +201,7 @@
             <section>
                 <div class="spotlight__head">
                     <h3 class="spotlights__title">Gymzoid</h3>
-                    <img src="./images/gymzoid.png" alt="">
+                    <img src="./images/gymzoid.webp" alt="" width="256" height="171">
                 </div>
                 <div class="spotlight__body">
                     <p class="spotlights__text">Gymzoid brings out the best.</p>
@@ -212,7 +217,7 @@
     <footer>
         <div class="company-details">
             <div class="company-details__text">
-                <div class="footer__logo"><img src="./images/logo.webp" alt="">
+                <div class="footer__logo"><img src="./images/logo.webp" alt="" width="102" height="100">
                     <h2>Adepts Chamber of Commerce</h2>
                 </div>
                 <div>
@@ -235,6 +240,7 @@
     </footer>
 
     <script src="./scripts/script.js"></script>
+    <script src="./scripts/windchill.js"></script>
 </body>
 
 </html>
