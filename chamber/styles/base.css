@@ -241,7 +241,7 @@ address {
 
 /* MAIN */
 main {
-  padding: 1.6rem;
+  padding: 3.2rem;
 }
 
 /* PLACEHOLDER STYLES */
@@ -401,4 +401,24 @@ main {
 .spotlights__contact {
   border-top: 2px solid var(--color-accent1);
   padding: 0.8rem;
+}
+
+/* DISCOVER */
+
+table {
+  border-collapse: collapse;
+}
+td,
+th {
+  font-size: var(--small);
+  border: 1px solid var(--color-secondary);
+  padding: 0.8rem;
+}
+
+tbody th {
+  text-align: left;
+}
+
+table tr:nth-child(even) {
+  background: darkslategray;
 }

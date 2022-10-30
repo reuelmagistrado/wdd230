@@ -51,7 +51,7 @@
     margin-right: 3.2rem;
   }
 
-  main {
+  .wrapper {
     grid-template-columns: 32rem auto 1fr;
   }
 
