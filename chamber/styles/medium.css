@@ -36,6 +36,10 @@
     grid-area: hero;
   }
 
+  .text-size::after {
+    content: "MEDIUM";
+  }
+
   .event {
     grid-area: event;
   }
