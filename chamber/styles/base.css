@@ -407,6 +407,7 @@ main {
 
 table {
   border-collapse: collapse;
+  margin: 0 auto 6.4rem;
 }
 td,
 th {
@@ -421,4 +422,42 @@ tbody th {
 
 table tr:nth-child(even) {
   background: darkslategray;
+}
+
+figure {
+  margin: 0;
+  padding: 2.4rem 0;
+  margin-bottom: 2.4rem;
+}
+
+picture img {
+  width: 100%;
+}
+
+figcaption {
+  text-align: left;
+}
+
+.figures {
+  text-align: center;
+}
+
+picture img[data-src] {
+  filter: blur(0.2em);
+}
+
+picture img {
+  filter: blur(0em);
+  transition: filter 0.5s;
+}
+
+.visitDisplay {
+  padding: 0.8rem;
+  background: var(--color-accent1);
+}
+
+.visits {
+  font-weight: bold;
+  font-size: var(--headline4);
+  color: var(--color-primary);
 }

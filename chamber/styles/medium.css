@@ -9,6 +9,16 @@
     justify-content: space-around;
     align-items: center;
   }
+
+  /* DISCOVER */
+  picture img {
+    width: 80%;
+  }
+
+  figcaption {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (min-width: 48em) {

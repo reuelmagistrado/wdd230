@@ -116,4 +116,20 @@
     grid-column: 2/3;
     grid-row: 3/4;
   }
+
+  /* DISCOVER */
+
+  picture img {
+    width: 50%;
+    transition: border-radius 0.5s;
+  }
+
+  picture img:hover {
+    border-radius: 35px 350px;
+  }
+
+  figcaption {
+    width: 50%;
+    margin: 0 auto;
+  }
 }
