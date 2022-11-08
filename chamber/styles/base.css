@@ -222,21 +222,19 @@ footer {
 address {
   font-style: normal;
   margin-bottom: 0.8rem;
+  text-align: left;
 }
 
 .company-details {
   border-bottom: 2px solid var(--dark-shadow-clear);
 }
 
-/* MAP */
-.map {
-  max-width: 100%;
-  width: 100vw;
-  margin: 1.6rem auto;
-}
-
 .base-footer {
   margin-top: 1.6rem;
+}
+
+.map {
+  font-weight: bold;
 }
 
 /* MAIN */
@@ -373,7 +371,6 @@ main {
 }
 
 .spotlights section:first-child {
-  /* border: 1px solid var(--color-secondary); */
   margin-bottom: 2.4rem;
 }
 
