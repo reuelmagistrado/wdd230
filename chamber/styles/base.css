@@ -33,6 +33,7 @@ button span {
   --color-accent: #ff8906;
   --color-accent1: #f25f4c;
   --color-link: #1fa8cf;
+  --color-link-dark: #00007a;
   --color-primary: #0f0e17;
   --color-secondary: #fffffe;
   --color-tertiary: #a7a9be;
@@ -235,6 +236,7 @@ address {
 
 .map {
   font-weight: bold;
+  color: var(--color-link-dark);
 }
 
 /* MAIN */
