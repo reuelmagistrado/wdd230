@@ -77,4 +77,9 @@
     display: block;
     grid-area: join;
   }
+
+  /* ---THANK YOU PAGE--- */
+  .thankyou-title {
+    font-size: 8rem;
+  }
 }

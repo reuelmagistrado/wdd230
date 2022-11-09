@@ -39,6 +39,7 @@ button span {
   --color-tertiary: #a7a9be;
   --dark-shadow-clear: rgba(255, 255, 255, 0.5);
   --dark-shadow: rgba(255, 255, 255, 0.2);
+  --form-button: #e53170;
   --headline1: 3.815rem;
   --headline2: 3.052rem;
   --headline3: 2.441rem;
@@ -425,8 +426,8 @@ table tr:nth-child(even) {
 
 figure {
   margin: 0;
-  padding: 2.4rem 0;
   margin-bottom: 2.4rem;
+  padding: 2.4rem 0;
 }
 
 picture img {
@@ -451,12 +452,104 @@ picture img {
 }
 
 .visitDisplay {
-  padding: 0.8rem;
   background: var(--color-accent1);
+  padding: 0.8rem;
 }
 
 .visits {
-  font-weight: bold;
-  font-size: var(--headline4);
   color: var(--color-primary);
+  font-size: var(--headline4);
+  font-weight: bold;
+}
+
+/* --- FORM PAGE --- */
+.form-title {
+  text-align: center;
+}
+
+.membership-choices {
+  display: block;
+}
+
+.benefits {
+  display: none;
+}
+
+fieldset {
+  margin-bottom: 1.6rem;
+  padding: 1.6rem;
+}
+legend {
+  padding: 0 0.8rem;
+}
+
+input {
+  margin-bottom: 1.6rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  border-radius: 0.8rem;
+  border: 2px solid;
+  outline: none;
+  padding: 1.6rem 2.4rem;
+  transition: border-color 0.5s ease-out;
+  width: 100%;
+  max-width: 32rem;
+}
+
+input:optional {
+  border-color: var(--color-tertiary);
+}
+
+input:required:valid {
+  border-color: green;
+}
+
+input:required:focus:valid {
+  background: url("https://assets.digitalocean.com/labs/icons/hand-thumbs-up.svg")
+    no-repeat 95% 50% lightgreen;
+  background-size: 25px;
+}
+
+input:invalid {
+  border-color: red;
+}
+
+input:focus:invalid {
+  background: url("https://assets.digitalocean.com/labs/icons/exclamation-triangle-fill.svg")
+    no-repeat 95% 50% lightsalmon;
+  background-size: 25px;
+}
+
+.form__btn {
+  background: var(--form-button);
+  border-radius: 1rem;
+  border: none;
+  color: var(--color-secondary);
+  font-weight: bold;
+  margin-top: 2.4rem;
+  margin-left: 2.4rem;
+  outline: none;
+  padding: 1.6rem;
+  width: 83%;
+  max-width: 32rem;
+}
+
+/* --- THANK YOU PAGE --- */
+.thankyou-container {
+  text-align: center;
+}
+
+.thankyou-title {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.check {
+  color: green;
+  font-size: 8rem;
+  margin: 0;
 }

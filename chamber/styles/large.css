@@ -132,4 +132,16 @@
     width: 50%;
     margin: 0 auto;
   }
+
+  /* --- JOIN PAGE --- */
+  .benefits {
+    font-size: var(--small);
+    font-style: italic;
+    display: inline;
+  }
+
+  .membership-choices {
+    display: flex;
+    justify-content: space-between;
+  }
 }

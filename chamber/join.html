@@ -115,45 +115,87 @@
         </nav>
     </header>
     <main>
-        <h1>Membership Application</h1>
+        <h1 class="form-title">Membership Application</h1>
         <form method="get" action="./thankyou.html">
-            <label>
-                <div>First Name *</div>
-                <input type="text" name="fname" autocomplete="given-name" autofocus required>
-            </label>
-            <label>
-                <div>Last Name *</div>
-                <input type="text" name="lname" autocomplete="family-name" required>
-            </label>
-            <label>
-                <div>Business Position</div>
-                <input type="text" name="title" pattern="[A-Za-z][A-Za-z- ]{7,}">
-            </label>
-            <label>
-                <div>Email *</div>
-                <input type="email" name="email" placeholder="example@email.com" autocomplete="email" required>
-            </label>
-            <label>
-                <div>Cell Phone *</div>
-                <input type="tel" name="phone" placeholder="0912-345-6789" pattern="09\d{2}-\d{3}-\d{4}" required>
-            </label>
-            <label>
-                <div>Business Name *</div>
-                <input type="text" name="business-name" required>
-            </label>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label>
+                    <div>First Name *</div>
+                    <input type="text" name="fname" autocomplete="given-name" autofocus required>
+                </label>
+                <label>
+                    <div>Last Name *</div>
+                    <input type="text" name="lname" autocomplete="family-name" required>
+                </label>
+                <label>
+                    <div>Email *</div>
+                    <input type="email" name="email" placeholder="example@email.com" autocomplete="email" required>
+                </label>
+                <label>
+                    <div>Cell Phone *</div>
+                    <input type="tel" name="phone" placeholder="0912-345-6789" pattern="09\d{2}-\d{3}-\d{4}" required>
+                </label>
+            </fieldset>
 
-            <div>Membership Level *
-                <label><input type="radio" name="membership" value="non-profit"> NP Membership</label>
-                <label><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
-                <label><input type="radio" name="membership" value="silver"> Silver Membership</label>
-                <label><input type="radio" name="membership" value="gold"> Gold Membership</label>
-            </div>
-            <label>
-                <div>Business Description</div>
-                <textarea name="business-description"></textarea>
-            </label>
+            <fieldset>
+                <legend>Membership Level</legend>
+                <label class="membership-choices">
+                    <span>
+                        <input type="radio" name="membership" value="non-profit" data-price="Free">
+                        NP Membership
+                    </span>
+                    <span class="benefits">
+                        (Volunteer and meet, Ribbon cuttings, Social media posts)
+                    </span>
+                </label>
+                <label class="membership-choices">
+                    <span>
+                        <input type="radio" name="membership" value="bronze" data-price="$100.00">
+                        Bronze Membership
+                    </span>
+                    <span class="benefits">
+                        (Business referrals, Member spotlight, Annual conference training)
+                    </span>
+                </label>
+                <label class="membership-choices">
+                    <span>
+                        <input type="radio" name="membership" value="silver" data-price="$200.00">
+                        Silver Membership
+                    </span>
+                    <span class="benefits">
+                        (Bronze benefits, Member-to-member discounts, Business After Hours, Website banner ad)
+                    </span>
+                </label>
+                <label class="membership-choices">
+                    <span>
+                        <input type="radio" name="membership" value="gold" data-price="$300.00">
+                        Gold Membership
+                    </span>
+                    <span class="benefits">
+                        (Silver benefits, Social media posts, Mentors on the Move, Payroll
+                        services)
+                    </span>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Business Details</legend>
+                <label>
+                    <div>Business Position</div>
+                    <input type="text" name="title" pattern="[A-Za-z-' ']{7,}">
+                </label>
+                <label>
+                    <div>Business Name *</div>
+                    <input type="text" name="business-name" required>
+                </label>
+                <label>
+                    <div>Business Description</div>
+                    <textarea name="business-description"></textarea>
+                </label>
+            </fieldset>
+
             <input type="hidden" name="datetime">
-            <input type="submit">Become a Member
+            <input type="submit" class="form__btn" value="Become a Member">
         </form>
     </main>
     <footer>
