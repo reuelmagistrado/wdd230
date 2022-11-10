@@ -483,6 +483,10 @@ legend {
   padding: 0 0.8rem;
 }
 
+.label__text {
+  display: block;
+}
+
 input {
   margin-bottom: 1.6rem;
 }

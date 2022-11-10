@@ -115,24 +115,24 @@
         </nav>
     </header>
     <main>
-        <h1 class="form-title">Membership Application</h1>
+        <h2 class="form-title">Membership Application</h2>
         <form method="get" action="./thankyou.html">
             <fieldset>
                 <legend>Personal Information</legend>
                 <label>
-                    <div>First Name *</div>
+                    <span class="label__text">First Name *</span>
                     <input type="text" name="fname" autocomplete="given-name" autofocus required>
                 </label>
                 <label>
-                    <div>Last Name *</div>
+                    <span class="label__text">Last Name *</span>
                     <input type="text" name="lname" autocomplete="family-name" required>
                 </label>
                 <label>
-                    <div>Email *</div>
+                    <span class="label__text">Email *</span>
                     <input type="email" name="email" placeholder="example@email.com" autocomplete="email" required>
                 </label>
                 <label>
-                    <div>Cell Phone *</div>
+                    <span class="label__text">Cell Phone *</span>
                     <input type="tel" name="phone" placeholder="0912-345-6789" pattern="09\d{2}-\d{3}-\d{4}" required>
                 </label>
             </fieldset>
@@ -181,15 +181,15 @@
             <fieldset>
                 <legend>Business Details</legend>
                 <label>
-                    <div>Business Position</div>
+                    <span class="label__text">Business Position</span>
                     <input type="text" name="title" pattern="[A-Za-z-' ']{7,}">
                 </label>
                 <label>
-                    <div>Business Name *</div>
+                    <span class="label__text">Business Name *</span>
                     <input type="text" name="business-name" required>
                 </label>
                 <label>
-                    <div>Business Description</div>
+                    <span class="label__text">Business Description</span>
                     <textarea name="business-description"></textarea>
                 </label>
             </fieldset>
