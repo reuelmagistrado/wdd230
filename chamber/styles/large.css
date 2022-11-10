@@ -144,4 +144,8 @@
     display: flex;
     justify-content: space-between;
   }
+
+  .form__btn:hover {
+    cursor: pointer;
+  }
 }
