@@ -671,5 +671,4 @@ input:focus:invalid {
 .company-cards a {
   font-weight: bold;
   text-decoration: underline;
-  color: var(--form-button);
 }

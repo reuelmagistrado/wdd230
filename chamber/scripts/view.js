@@ -31,14 +31,15 @@ function displayCompanies(data) {
   data.companies.forEach((company) => {
     const image = document.createElement("img");
     const section = document.createElement("section");
-    const h3 = document.createElement("h3");
+    const h2 = document.createElement("h2");
     const para = document.createElement("p");
     const address = document.createElement("address");
     const address1 = document.createElement("address");
     const link = document.createElement("a");
 
     image.src = company.logo;
-    h3.textContent = company.name;
+    image.alt = `${company.name} logo.`;
+    h2.textContent = company.name;
     para.textContent = company.membershipLevel;
     address.textContent = company.address;
     address1.textContent = company.contact;
