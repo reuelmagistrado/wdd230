@@ -557,3 +557,39 @@ input:focus:invalid {
   font-size: 8rem;
   margin: 0;
 }
+
+/* Form */
+
+.plan-container {
+  margin: 0;
+  order: 2;
+  padding: 1.6rem;
+}
+
+.plan-container h2 {
+  text-align: center;
+}
+
+.plan {
+  background: var(--color-secondary);
+  color: var(--color-primary);
+}
+
+.plan header {
+  padding: 0.8rem 1.6rem;
+}
+
+.plan h3 {
+  margin: 0;
+}
+
+.plan ul {
+  list-style-type: none;
+  padding: 1.6rem;
+}
+
+.plan ul li:before {
+  content: "✔";
+  color: green;
+  padding-right: 1.6rem;
+}

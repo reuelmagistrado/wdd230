@@ -148,4 +148,11 @@
   .form__btn:hover {
     cursor: pointer;
   }
+
+  /* ----------------- */
+  .form-cards-container {
+    display: grid;
+    gap: 1.6rem;
+    grid-template-columns: 1fr 1fr;
+  }
 }
