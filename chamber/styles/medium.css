@@ -82,4 +82,9 @@
   .thankyou-title {
     font-size: 8rem;
   }
+
+  /* DIRECTORY */
+  .list section img {
+    display: block;
+  }
 }

@@ -593,3 +593,83 @@ input:focus:invalid {
   color: green;
   padding-right: 1.6rem;
 }
+
+/* DIRECTORY */
+.view-container {
+  display: flex;
+  gap: 1.6rem;
+  justify-content: center;
+}
+
+.view-container img {
+  display: block;
+  height: 31px;
+  width: 31px;
+  margin: 0 auto;
+}
+
+.company-cards-container,
+.company-cards {
+  margin: 0.75rem;
+}
+
+.company-cards {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  align-items: center;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.list section {
+  display: flex;
+  align-items: center;
+}
+
+.grid section {
+  flex-direction: column;
+  text-align: center;
+}
+
+.grid section > * {
+  margin: 0.1rem;
+}
+
+.list section {
+  flex-direction: row;
+  justify-content: left;
+}
+
+.list section > * {
+  margin: 0 1rem;
+  text-align: left;
+}
+
+.list section img {
+  display: none; /* smaller viewports only */
+}
+
+.company-cards img {
+  height: 75px;
+  max-width: 100%; /* Images are jerks - Seattle*/
+}
+
+.company-cards address {
+  text-align: center;
+}
+
+.company-cards a {
+  font-weight: bold;
+  text-decoration: underline;
+  color: var(--form-button);
+}

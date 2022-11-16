@@ -1,76 +1,76 @@
 {
   "companies": [
     {
-      "name": "Smart Communications",
-      "address": "SMART Tower, 6799 Ayala Ave, Makati",
+      "name": "Smart",
+      "address": "Makati",
       "contact": "8888 1111",
       "url": "https://smart.com.ph/corporate",
-      "logo": "temp",
-      "membership-level": "temp"
+      "logo": "./images/smart.webp",
+      "membershipLevel": "Gold"
     },
     {
       "name": "Accenture",
-      "address": "MSE Building, Ayala Ave, Makati",
+      "address": "Makati",
       "contact": "1 (216) 672-0266",
       "url": "https://www.accenture.com/ph-en",
-      "logo": "temp",
-      "membership-level": "temp"
+      "logo": "./images/accenture.webp",
+      "membershipLevel": "Gold"
     },
     {
       "name": "Shell",
-      "address": "41st Floor, The Finance Center, 26th St, Taguig",
+      "address": "Taguig",
       "contact": "8878 8888",
       "url": "https://www.shell.com/",
-      "logo": "temp",
-      "membership-level": "temp"
+      "logo": "./images/shell.webp",
+      "membershipLevel": "Bronze"
     },
     {
       "name": "Metrobank",
-      "address": "Metrobank Plaza, Sen. Gil Puyat Avenue, Urdaneta Village, Makati",
+      "address": "Makati",
       "contact": "8870 0700",
       "url": "https://www.metrobank.com.ph/home",
-      "logo": "temp",
-      "membership-level": "temp"
+      "logo": "./images/metrobank.webp",
+      "membershipLevel": "Silver"
     },
     {
       "name": "Emerson",
-      "address": "12F SM Cyber West Ave, Bulacan, Project 7, Quezon City",
+      "address": "Quezon City",
       "contact": "8479 5101",
       "url": "https://www.emerson.com/en-us",
-      "logo": "temp",
-      "membership-level": "temp"
+      "logo": "./images/emerson.webp",
+      "membershipLevel": "Bronze"
     },
     {
       "name": "BDO Unibank",
-      "address": "7899 Makati Avenue, Makati ",
+      "address": "Makati ",
       "contact": "8840 7000",
       "url": "https://www.bdo.com.ph/personal",
-      "logo": "temp",
-      "membership-level": "temp"
+      "logo": "./images/bdo.webp",
+      "membershipLevel": "Silver"
     },
     {
       "name": "Manila Water",
-      "address": "MWSS Administration Building 489 Katipunan Road, Balara Quezon City",
+      "address": "Quezon City",
       "contact": "1627",
       "url": "https://www.manilawater.com/corporate",
-      "logo": "temp",
-      "membership-level": "temp"
+      "logo": "./images/manilawater.webp",
+      "membershipLevel": "Non-Profit"
     },
     {
       "name": "Nestle",
-      "address": "31 Plaza Drive Rockwell Center, Makati",
+      "address": "Makati",
       "contact": "4790 2705",
       "url": "https://www.nestle.com.ph/",
-      "logo": "temp",
-      "membership-level": "temp"
+      "logo": "./images/nestle.webp",
+      "membershipLevel": "Silver"
     },
     {
       "name": "Cognizant",
-      "address": "1110 Campus Avenue, Mckinley Hill Cyber Park, Taguig",
+      "address": "Taguig",
       "contact": "7976 2270",
       "url": "https://www.cognizant.com/ph/en",
-      "logo": "temp",
-      "membership-level": "temp"
+      "logo": "./images/cognizant.webp",
+      "membershipLevel": "Gold"
     }
   ]
 }
