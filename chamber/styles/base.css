@@ -656,12 +656,12 @@ input:focus:invalid {
 }
 
 .list section img {
-  display: none; /* smaller viewports only */
+  display: none;
 }
 
 .company-cards img {
   height: 75px;
-  max-width: 100%; /* Images are jerks - Seattle*/
+  max-width: 100%;
 }
 
 .company-cards address {
