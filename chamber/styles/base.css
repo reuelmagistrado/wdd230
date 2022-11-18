@@ -357,12 +357,30 @@ main {
 
 .weather__container {
   color: var(--color-tertiary);
-  font-size: var(--headline4);
 }
 
-.weather__temp {
+.weather__container hr {
+  border-color: var(--color-accent);
+  margin: 2.4rem;
+}
+.weather__container img {
+  display: block;
+  margin: 0 auto;
+}
+
+.weather__container h3 {
+  text-align: center;
+}
+
+.weather_temp {
   font-family: "Yusei Magic", sans-serif;
-  font-size: var(--headline1);
+  font-size: 6.4rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.weather_desc {
+  text-align: center;
 }
 
 .join {
@@ -611,6 +629,10 @@ input:focus:invalid {
 .company-cards-container,
 .company-cards {
   margin: 0.75rem;
+}
+
+.company-cards-container section {
+  overflow-x: scroll;
 }
 
 .company-cards {

@@ -83,7 +83,9 @@ let numVisits = Number(window.localStorage.getItem("visits-ls"));
 
 // determine if this is the first visit or display the number of visits.
 if (numVisits !== 0) {
-  visitsDisplay.textContent = numVisits;
+  if (visitsDisplay) {
+    visitsDisplay.textContent = numVisits;
+  }
 } else {
   visitsDisplay.textContent = `This is your first visit!`;
 }
@@ -114,3 +116,116 @@ async function apiFetch() {
 }
 
 apiFetch();
+
+function displayResults(weatherData) {
+  const weatherContainer = document.querySelector(".weather__container");
+  const cityName = document.createElement("h3");
+  const weatherTemperature = document.createElement("div");
+  const weatherDescription = document.createElement("div");
+  const weatherHumidity = document.createElement("div");
+  const windSpeed = document.createElement("div");
+  const weatherChill = document.createElement("div");
+  const weatherIcon = document.createElement("img");
+  const hr = document.createElement("hr");
+
+  cityName.textContent = weatherData.name;
+  weatherIcon.src = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
+  weatherTemperature.innerHTML = `${weatherData.main.temp}°<sup>F</sup>`;
+  weatherTemperature.classList.add("weather_temp");
+  const desc = weatherData.weather[0].description;
+  const words = desc.split(" ");
+  const capitalizedDesc = words
+    .map((word) => {
+      return word[0].toUpperCase() + word.substring(1);
+    })
+    .join(" ");
+  weatherDescription.textContent = capitalizedDesc;
+  weatherDescription.classList.add("weather_desc");
+  weatherHumidity.textContent = `Humidity: ${weatherData.main.humidity}`;
+  windSpeed.textContent = `Wind Speed: ${weatherData.wind.speed}`;
+
+  const chill = calculateWindChill(weatherData.main.temp);
+  if (chill) {
+    weatherChill.innerHTML = `Wind Chill: ${chill.toFixed(2)}°<sup>F</sup>`;
+  } else {
+    weatherChill.textContent = "Wind Chill: N/A";
+  }
+
+  weatherContainer.append(
+    cityName,
+    weatherIcon,
+    weatherTemperature,
+    weatherDescription,
+    hr,
+    weatherHumidity,
+    windSpeed,
+    weatherChill
+  );
+}
+
+function calculateWindChill(temperature, speed) {
+  const windChill =
+    35.74 +
+    0.6215 * temperature -
+    35.75 * speed ** 0.16 +
+    0.4275 * temperature * speed ** 0.16;
+
+  return windChill;
+}
+
+// DISCOVER
+
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector(".company-cards-container");
+
+// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
+
+gridbutton.addEventListener("click", () => {
+  // example using arrow function
+  display.classList.add("grid");
+  display.classList.remove("list");
+});
+
+listbutton.addEventListener("click", showList); // example using defined function
+
+function showList() {
+  display.classList.add("list");
+  display.classList.remove("grid");
+}
+
+async function getResponse() {
+  const response = await fetch("./json/data.json");
+  if (response.ok) {
+    const data = await response.json();
+    displayCompanies(data);
+  }
+}
+
+function displayCompanies(data) {
+  const article = document.querySelector(".grid");
+
+  data.companies.forEach((company) => {
+    const image = document.createElement("img");
+    const section = document.createElement("section");
+    const h2 = document.createElement("h2");
+    const para = document.createElement("p");
+    const address = document.createElement("address");
+    const address1 = document.createElement("address");
+    const link = document.createElement("a");
+
+    image.src = company.logo;
+    image.alt = `${company.name} logo.`;
+    h2.textContent = company.name;
+    para.textContent = company.membershipLevel;
+    address.textContent = company.address;
+    address1.textContent = company.contact;
+    link.href = company.url;
+    link.target = "__blank";
+    link.textContent = "Website";
+    section.classList = "company-cards";
+    section.append(image, h2, para, address, address1, link);
+    article.append(section);
+  });
+}
+getResponse();
