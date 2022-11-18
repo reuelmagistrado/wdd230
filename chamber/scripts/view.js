@@ -47,7 +47,7 @@ function displayCompanies(data) {
     link.target = "__blank";
     link.textContent = "Website";
     section.classList = "company-cards";
-    section.append(image, h3, para, address, address1, link);
+    section.append(image, h2, para, address, address1, link);
     article.append(section);
   });
 }

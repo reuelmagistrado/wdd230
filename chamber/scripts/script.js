@@ -93,3 +93,24 @@ numVisits++;
 // store the new number of visits value
 localStorage.setItem("visits-ls", numVisits);
 // show todays date.
+
+// WEATHER API
+const url =
+  "https://api.openweathermap.org/data/2.5/weather?q=Taguig&units=imperial&appid=4a21eeb6818a6efbe082b97dad0224ab";
+
+async function apiFetch() {
+  try {
+    const response = await fetch(url);
+
+    if (response.ok) {
+      const weatherData = await response.json();
+      displayResults(weatherData);
+    } else {
+      throw Error(await response.text());
+    }
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+apiFetch();
