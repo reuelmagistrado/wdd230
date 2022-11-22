@@ -87,7 +87,9 @@ if (numVisits !== 0) {
     visitsDisplay.textContent = numVisits;
   }
 } else {
-  visitsDisplay.textContent = `This is your first visit!`;
+  if (visitsDisplay) {
+    visitsDisplay.textContent = `This is your first visit!`;
+  }
 }
 
 // increment the number of visits.
