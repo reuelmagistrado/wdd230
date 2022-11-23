@@ -21,6 +21,26 @@
   .hamburger-btn {
     display: none;
   }
+
+  .navigation__item a {
+    position: relative;
+  }
+
+  .navigation__item a::after {
+    content: "";
+    position: absolute;
+    background-color: var(--color-accent1);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: 1rem;
+    transition: 0.3s;
+  }
+
+  .navigation__item a:hover::after {
+    width: 100%;
+  }
+
   .navigation {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

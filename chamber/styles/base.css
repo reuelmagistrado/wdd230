@@ -105,6 +105,10 @@ header {
 
 /* Navigation Top */
 
+#active-link {
+  color: var(--color-accent1);
+}
+
 .navigation {
   background: var(--color-primary);
   box-shadow: 0 2px 4px 0 var(--dark-shadow);
@@ -127,6 +131,8 @@ svg {
   background: var(--color-accent);
   border-radius: 5rem;
   border: none;
+  color: var(--color-link-dark);
+  font-weight: bold;
   display: none;
   font-size: small;
   padding: 1.6rem;
@@ -238,6 +244,12 @@ address {
 .map {
   font-weight: bold;
   color: var(--color-link-dark);
+}
+
+.date-modified a {
+  color: var(--color-link-dark);
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 /* MAIN */

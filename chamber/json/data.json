@@ -6,7 +6,8 @@
       "contact": "8888 1111",
       "url": "https://smart.com.ph/corporate",
       "logo": "./images/smart.webp",
-      "membershipLevel": "Gold"
+      "membershipLevel": "Gold",
+      "slogan": "Living up to 'Live More'."
     },
     {
       "name": "Accenture",
@@ -14,7 +15,8 @@
       "contact": "1 (216) 672-0266",
       "url": "https://www.accenture.com/ph-en",
       "logo": "./images/accenture.webp",
-      "membershipLevel": "Gold"
+      "membershipLevel": "Gold",
+      "slogan": "Let there be change."
     },
     {
       "name": "Shell",
@@ -22,7 +24,8 @@
       "contact": "8878 8888",
       "url": "https://www.shell.com/",
       "logo": "./images/shell.webp",
-      "membershipLevel": "Bronze"
+      "membershipLevel": "Bronze",
+      "slogan": "Here we go. Oil, please."
     },
     {
       "name": "Metrobank",
@@ -30,7 +33,8 @@
       "contact": "8870 0700",
       "url": "https://www.metrobank.com.ph/home",
       "logo": "./images/metrobank.webp",
-      "membershipLevel": "Silver"
+      "membershipLevel": "Silver",
+      "slogan": "Meaningful Banking from Good Hands."
     },
     {
       "name": "Emerson",
@@ -38,7 +42,8 @@
       "contact": "8479 5101",
       "url": "https://www.emerson.com/en-us",
       "logo": "./images/emerson.webp",
-      "membershipLevel": "Bronze"
+      "membershipLevel": "Bronze",
+      "slogan": "Expression Necessary to Evolution."
     },
     {
       "name": "BDO Unibank",
@@ -46,7 +51,8 @@
       "contact": "8840 7000",
       "url": "https://www.bdo.com.ph/personal",
       "logo": "./images/bdo.webp",
-      "membershipLevel": "Silver"
+      "membershipLevel": "Silver",
+      "slogan": "We find ways."
     },
     {
       "name": "Manila Water",
@@ -54,7 +60,8 @@
       "contact": "1627",
       "url": "https://www.manilawater.com/corporate",
       "logo": "./images/manilawater.webp",
-      "membershipLevel": "Non-Profit"
+      "membershipLevel": "Non-Profit",
+      "slogan": "Care in Every Drop."
     },
     {
       "name": "Nestle",
@@ -62,7 +69,8 @@
       "contact": "4790 2705",
       "url": "https://www.nestle.com.ph/",
       "logo": "./images/nestle.webp",
-      "membershipLevel": "Silver"
+      "membershipLevel": "Silver",
+      "slogan": "Good food, Good life."
     },
     {
       "name": "Cognizant",
@@ -70,7 +78,8 @@
       "contact": "7976 2270",
       "url": "https://www.cognizant.com/ph/en",
       "logo": "./images/cognizant.webp",
-      "membershipLevel": "Gold"
+      "membershipLevel": "Gold",
+      "slogan": "Always strive, never settle."
     }
   ]
 }
