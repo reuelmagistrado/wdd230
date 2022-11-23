@@ -29,6 +29,7 @@ function displayResults(weatherData) {
 
   cityName.textContent = weatherData.name;
   weatherIcon.src = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
+  weatherIcon.alt = weatherData.weather[0].description;
   weatherTemperature.innerHTML = `${weatherData.main.temp}°<sup>F</sup>`;
   weatherTemperature.classList.add("weather_temp");
   const desc = weatherData.weather[0].description;

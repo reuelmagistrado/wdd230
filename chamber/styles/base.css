@@ -471,8 +471,10 @@ picture img {
 }
 
 .visitDisplay {
-  background: var(--color-accent1);
+  background: var(--color-accent);
+  color: var(--color-primary);
   padding: 0.8rem;
+  font-weight: bold;
 }
 
 .visits {
@@ -548,10 +550,10 @@ input:focus:invalid {
 }
 
 .form__btn {
-  background: var(--form-button);
+  background: var(--color-accent);
   border-radius: 1rem;
   border: none;
-  color: var(--color-secondary);
+  color: var(--color-primary);
   font-weight: bold;
   margin-top: 2.4rem;
   margin-left: 2.4rem;
