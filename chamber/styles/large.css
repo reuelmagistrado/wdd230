@@ -140,7 +140,7 @@
     transition: transform 0.2s;
   }
 
-  picture img:hover {
+  .tourist-spots img:hover {
     transform: scale(1.1);
   }
 
