@@ -625,16 +625,16 @@ input:focus:invalid {
 }
 
 .company-cards {
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 0.5rem;
   background-color: var(--color-secondary);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   color: var(--color-primary);
+  padding: 0.5rem;
 }
 
 .grid {
+  align-items: center;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  align-items: center;
 }
 
 .list {
@@ -643,8 +643,8 @@ input:focus:invalid {
 }
 
 .list section {
-  display: flex;
   align-items: center;
+  display: flex;
 }
 
 .grid section {
@@ -682,4 +682,22 @@ input:focus:invalid {
 .company-cards a {
   font-weight: bold;
   text-decoration: underline;
+}
+
+/* Contacts */
+.contact__card {
+  background: var(--color-secondary);
+  border: 5px solid var(--color-tertiary);
+  color: var(--color-primary);
+  margin-bottom: 1.6rem;
+  padding: 1.6rem;
+}
+
+.contact__card h3,
+.contact__card p {
+  margin: 0;
+}
+
+.contact-container {
+  align-self: center;
 }
