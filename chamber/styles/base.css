@@ -246,17 +246,6 @@ main {
 }
 
 /* PLACEHOLDER STYLES */
-.text-size {
-  text-align: center;
-  padding-top: 6.4rem;
-}
-
-.text-size::after {
-  content: "SMALL";
-  color: var(--color-primary);
-  font-size: var(--headline1);
-}
-
 .hero {
   position: relative;
 }
