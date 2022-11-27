@@ -257,6 +257,7 @@ main {
 .hero {
   position: relative;
   text-align: center;
+  background: var(--color-secondary);
 }
 
 .hero div {
