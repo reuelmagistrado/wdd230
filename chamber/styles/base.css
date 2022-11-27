@@ -86,7 +86,6 @@ header {
 
 .header__site-name {
   margin: 0;
-  font-weight: bold;
   font-size: var(--headline1);
 }
 
