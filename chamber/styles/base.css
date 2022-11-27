@@ -86,6 +86,7 @@ header {
 
 .header__site-name {
   margin: 0;
+  font-weight: bold;
   font-size: var(--headline1);
 }
 
@@ -251,6 +252,10 @@ address {
 /* MAIN */
 main {
   padding: 3.2rem;
+}
+
+.title {
+  text-align: center;
 }
 
 /* PLACEHOLDER STYLES */
