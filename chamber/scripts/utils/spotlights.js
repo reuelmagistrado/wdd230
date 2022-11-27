@@ -26,6 +26,8 @@ export async function getResponse() {
 
       img.src = chosenCompanies[i].logo;
       img.alt = `${chosenCompanies[i].name} logo`;
+      img.width = chosenCompanies[i].width;
+      img.height = chosenCompanies[i].height;
 
       divBody.classList.add("spotlight__body");
       text.classList.add("spotlights__text");

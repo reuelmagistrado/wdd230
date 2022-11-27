@@ -7,7 +7,9 @@
       "url": "https://smart.com.ph/corporate",
       "logo": "./images/smart.webp",
       "membershipLevel": "Gold",
-      "slogan": "Living up to 'Live More'."
+      "slogan": "Living up to 'Live More'.",
+      "width": 267,
+      "height": 189
     },
     {
       "name": "Accenture",
@@ -16,7 +18,9 @@
       "url": "https://www.accenture.com/ph-en",
       "logo": "./images/accenture.webp",
       "membershipLevel": "Gold",
-      "slogan": "Let there be change."
+      "slogan": "Let there be change.",
+      "width": 300,
+      "height": 168
     },
     {
       "name": "Shell",
@@ -25,7 +29,9 @@
       "url": "https://www.shell.com/",
       "logo": "./images/shell.webp",
       "membershipLevel": "Bronze",
-      "slogan": "Here we go. Oil, please."
+      "slogan": "Here we go. Oil, please.",
+      "width": 300,
+      "height": 168
     },
     {
       "name": "Metrobank",
@@ -34,7 +40,9 @@
       "url": "https://www.metrobank.com.ph/home",
       "logo": "./images/metrobank.webp",
       "membershipLevel": "Silver",
-      "slogan": "Meaningful Banking from Good Hands."
+      "slogan": "Meaningful Banking from Good Hands.",
+      "width": 373,
+      "height": 135
     },
     {
       "name": "Emerson",
@@ -43,7 +51,9 @@
       "url": "https://www.emerson.com/en-us",
       "logo": "./images/emerson.webp",
       "membershipLevel": "Bronze",
-      "slogan": "Expression Necessary to Evolution."
+      "slogan": "Expression Necessary to Evolution.",
+      "width": 339,
+      "height": 149
     },
     {
       "name": "BDO Unibank",
@@ -52,7 +62,9 @@
       "url": "https://www.bdo.com.ph/personal",
       "logo": "./images/bdo.webp",
       "membershipLevel": "Silver",
-      "slogan": "We find ways."
+      "slogan": "We find ways.",
+      "width": 310,
+      "height": 163
     },
     {
       "name": "Manila Water",
@@ -61,7 +73,9 @@
       "url": "https://www.manilawater.com/corporate",
       "logo": "./images/manilawater.webp",
       "membershipLevel": "Non-Profit",
-      "slogan": "Care in Every Drop."
+      "slogan": "Care in Every Drop.",
+      "width": 284,
+      "height": 177
     },
     {
       "name": "Nestle",
@@ -70,7 +84,9 @@
       "url": "https://www.nestle.com.ph/",
       "logo": "./images/nestle.webp",
       "membershipLevel": "Silver",
-      "slogan": "Good food, Good life."
+      "slogan": "Good food, Good life.",
+      "width": 225,
+      "height": 225
     },
     {
       "name": "Cognizant",
@@ -79,7 +95,9 @@
       "url": "https://www.cognizant.com/ph/en",
       "logo": "./images/cognizant.webp",
       "membershipLevel": "Gold",
-      "slogan": "Always strive, never settle."
+      "slogan": "Always strive, never settle.",
+      "width": 283,
+      "height": 178
     }
   ]
 }
