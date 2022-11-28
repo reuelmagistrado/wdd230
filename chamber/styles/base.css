@@ -79,6 +79,7 @@ header {
   justify-content: center;
   margin-bottom: 1.6rem;
   padding-top: 1.6rem;
+  color: var(--color-primary);
 }
 
 .site-name-container {
@@ -221,6 +222,10 @@ footer {
   background: var(--color-tertiary);
   padding: 1.6rem;
   text-align: center;
+  color: var(--color-primary);
+}
+
+.footer__logo {
   color: var(--color-primary);
 }
 
