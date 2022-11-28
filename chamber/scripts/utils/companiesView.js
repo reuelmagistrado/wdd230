@@ -36,6 +36,8 @@ function displayCompanies(data) {
 
     image.src = company.logo;
     image.alt = `${company.name} logo.`;
+    image.width = company.width;
+    image.height = company.height;
     h2.textContent = company.name;
     para.textContent = company.membershipLevel;
     address.textContent = company.address;
